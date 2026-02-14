@@ -1,0 +1,8 @@
+{
+  "name": "Beltagi Studio - Technical Architecture & BIM",
+  "description": "A high-performance landing page for a professional architectural service specializing in BIM, technical coordination, and project delivery.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

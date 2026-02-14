@@ -1,11 +1,22 @@
-<div align="center">
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+# Beltagi Studio | Production-Ready Architectural Landing Page
 
-  <h1>Built with AI Studio</h2>
+A specialized landing page for Beltagi Studio, focused on high-conversion for developers, contractors, and design firms seeking technical architecture and BIM expertise.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Technical Stack
+- **React 18**: Modern UI components and state management.
+- **TypeScript**: Robust type safety for scalable code.
+- **Tailwind CSS**: Utility-first styling for high performance and minimal bundle size.
+- **Gemini AI**: Integrated technical assistant for real-time user engagement.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Design Philosophy
+- **Minimalism**: Clean, white-space focused layout that reflects architectural precision.
+- **High-Contrast**: Using a monochrome palette (Zinc/Slate) with subtle depth.
+- **Clarity**: Bold typography (Space Grotesk) for impact and readability.
+- **Performance**: Zero heavy external UI kits or dependencies.
 
-</div>
+## Key Features
+- **Mobile First**: Fully responsive across all breakpoints.
+- **AI Assistant**: Conversational AI trained to answer technical BIM/Coordination questions.
+- **Interactive Process**: Step-by-step visual walkthrough of engagement.
+- **Case Highlights**: Data-focused project cards showcasing real impact.
