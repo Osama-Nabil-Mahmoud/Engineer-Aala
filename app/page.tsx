@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState } from 'react';
@@ -19,7 +18,7 @@ export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col selection:bg-zinc-900 selection:text-white">
       <Navbar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       
       <main className="flex-grow">
@@ -35,6 +34,8 @@ export default function Home() {
       </main>
 
       <Footer />
+      
+      {/* AI Assistant for Technical Queries */}
       <Assistant />
     </div>
   );
