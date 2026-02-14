@@ -1,4 +1,3 @@
-// Add React import to resolve the 'Cannot find namespace React' error
 import React from "react";
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
