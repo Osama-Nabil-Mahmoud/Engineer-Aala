@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useEffect } from 'react';
 import { GoogleGenAI } from "@google/genai";
 
@@ -24,15 +23,18 @@ const Assistant: React.FC = () => {
     setIsLoading(true);
 
     try {
+      // Initialize GoogleGenAI right before the call to ensure the latest configuration is used
       const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
       const response = await ai.models.generateContent({
-        model: 'gemini-3-flash-preview',
+        // Technical architecture and BIM coordination are complex tasks requiring 'gemini-3-pro-preview'
+        model: 'gemini-3-pro-preview',
         contents: userMsg,
         config: {
           systemInstruction: "You are a technical architecture assistant for Beltagi Studio. You help visitors understand BIM coordination, technical packages, and architectural delivery. Be professional, concise, and technical. If asked about pricing or booking, direct them to the contact form.",
         },
       });
 
+      // Extract text output using the .text property as per GenerateContentResponse definition
       setMessages(prev => [...prev, { role: 'assistant', text: response.text || "I'm sorry, I couldn't process that technical query." }]);
     } catch (error) {
       console.error(error);

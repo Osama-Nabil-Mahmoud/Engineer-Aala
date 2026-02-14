@@ -1,0 +1,27 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 24, 24, 27;
+  --background-start-rgb: 250, 250, 250;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@layer base {
+  body {
+    @apply bg-zinc-50 text-zinc-900 selection:bg-zinc-900 selection:text-white;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+.clip-path-hero {
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+@media (max-width: 768px) {
+  .clip-path-hero {
+    clip-path: none;
+  }
+}
